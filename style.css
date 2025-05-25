@@ -165,7 +165,7 @@ body {
 }
 
 /* Reveal Animation */
-.reveal {
+/* .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -186,7 +186,7 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
-
+ */
   .hero-title {
     font-size: 2rem;
   }
