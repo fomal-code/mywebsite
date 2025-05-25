@@ -190,6 +190,16 @@ body {
   .hero-title {
     font-size: 2rem;
   }
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
   .hero-subtitle {
     font-size: 1rem;
