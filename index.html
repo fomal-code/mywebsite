@@ -2,145 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lawal Fawaz - Web Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lawal Fawaz — Web Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
   <header class="nav">
-    <div class="container">
-      <h1>Lawal Fawaz</h1>
+    <div class="container nav-content">
+      <h1 class="logo">Fawaz.dev</h1>
       <nav>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">Bio</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="contact-btn" onclick="toggleContactForm()">Contact</button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="img">
-        <img src="hero.jpg" alt="Hero Image" class="image" />
-        <div class="overlay">
-          <h2 class="hotext">Hello, I'm Fawaz — Web Developer</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m Lawal Fawaz, a passionate and detail-oriented web developer dedicated to crafting elegant, responsive websites and applications that solve real-world problems.</p>
-      <img src="lawalfawas.jpg" alt="Lawal Fawaz" class="profile-img" />
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills section">
-    <div class="container">
-      <h2>Skills</h2>
-      <article class="skill">
-        <h3>HTML</h3>
-        <p>Semantic, SEO-optimized markup with HTML5 best practices.</p>
-      </article>
-      <article class="skill">
-        <h3>CSS</h3>
-        <p>Modern, responsive layouts with Flexbox, Grid, and animations.</p>
-      </article>
-      <article class="skill">
-        <h3>JavaScript</h3>
-        <p>Interactive interfaces, DOM manipulation, and dynamic behaviors.</p>
-      </article>
-      <article class="skill">
-        <h3>PHP</h3>
-        <p>Server-side logic and basic back-end scripting.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects section">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1" />
-        <div class="project-content">
-          <h3>Portfolio Website</h3>
-          <p>A responsive, personal portfolio website built with HTML, CSS & JS.</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2" />
-        <div class="project-content">
-          <h3>Blog CMS</h3>
-          <p>Dynamic blog platform using PHP & MySQL with user management.</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-section about">
-        <h3>About Me</h3>
-        <p>Clean code, real-world solutions, and great user experiences — that's what I bring to the table.</p>
-      </div>
-      <div class="footer-section links">
-        <h3>Quick Links</h3>
-        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2 class="hero-title">Hi, I’m Lawal Fawaz</h2>
+      <p class="hero-subtitle">Frontend Developer crafting sleek digital experiences.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container reveal">
+      <h2 class="section-title">About Me</h2>
+      <p>I specialize in building modern, responsive websites using HTML, CSS, JavaScript, and PHP. I’m passionate about performance, clean code, and turning designs into polished, user-friendly interfaces.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section dark">
+    <div class="container reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Responsive Design</div>
       </div>
-      <div class="footer-section social">
-        <h3>Connect</h3>
-        <ul class="social-icons">
-          <li><a href="#"><img src="icons/facebook-icon.png" alt="Facebook" /></a></li>
-          <li><a href="#"><img src="icons/twitter-icon.png" alt="Twitter" /></a></li>
-          <li><a href="#"><img src="icons/linkedin-icon.png" alt="LinkedIn" /></a></li>
-        </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Built with HTML, CSS, and JavaScript. Fully responsive and animated.</p>
+          <a href="#">View Live</a>
+        </div>
+        <div class="project-card">
+          <h3>Blog CMS</h3>
+          <p>PHP-based blog platform with admin panel and MySQL backend.</p>
+          <a href="#">View Repo</a>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <div class="container reveal">
+      <h2 class="section-title">Let’s Work Together</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Lawal Fawaz. All rights reserved.</p>
     </div>
   </footer>
 
