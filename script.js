@@ -1,15 +1,15 @@
-// Scroll Reveal Animation
-const reveals = document.querySelectorAll('.reveal');
+// Intersection Observer Reveal Animation
+const revealElements = document.querySelectorAll('.reveal');
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < windowHeight - 100) {
-      el.classList.add('active');
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target); // reveal only once
     }
   });
-}
+}, {
+  threshold: 0.1 // reveal when 10% visible
+});
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+revealElements.forEach(el => observer.observe(el));
